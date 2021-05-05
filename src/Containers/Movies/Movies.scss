@@ -1,0 +1,8 @@
+@import "../../SCSS/colors.scss";
+
+.movies {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: $dark;
+	padding-top: 2rem;
+}

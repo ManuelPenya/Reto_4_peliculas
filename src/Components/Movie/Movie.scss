@@ -1,0 +1,13 @@
+@import "../../SCSS/colors.scss";
+
+.movie {
+	display: flex;
+	flex-direction: column;
+	margin: 1rem;
+	padding: 1rem;
+	background-color: $ligth;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 240px;
+	border-radius: 0.5rem;
+}
