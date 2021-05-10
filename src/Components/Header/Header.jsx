@@ -13,7 +13,7 @@ const Header = () => {
                 <span className="novedades">Novedades</span>
             </NavLink>
             
-            <NavLink to="top_rated">
+            <NavLink to="/top_rated">
                 <span className="top">Más Valoradas</span>
             </NavLink>
         </header>

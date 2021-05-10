@@ -1,0 +1,47 @@
+@import "../../SCSS/colors.scss";
+
+.movieDescription {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: $dark;
+
+	.movieDetailsPpal {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		justify-content: space-evenly;
+		align-items: center;
+		padding: 2rem;
+
+		div {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			max-width: 400px;
+			color: $ligth;
+			font-size: large;
+		}
+
+		img {
+			max-width: 90%;
+		}
+		.description_and_rating {
+			max-width: 90%;
+			padding: 2rem;
+		}
+
+		@media (min-width: 400px) {
+			flex-direction: row;
+			justify-content: space-evenly;
+
+			img {
+				max-width: 100%;
+			}
+			.description_and_rating {
+				max-width: 100%;
+			}
+		}
+	}
+}

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { detailsMovie } from '../../services/redux/actions.js';
-
+import './MovieDescription.scss';
 
 export default function MovieDescription(props) {
     const dispatch = useDispatch();
@@ -14,9 +14,17 @@ export default function MovieDescription(props) {
     }, [dispatch, movieId])
     return (
         <div className="movieDescription">
-            <h4>{details.title}</h4>
-                <img src={"http://image.tmdb.org/t/p/w185" + details.poster_path} alt=""/>
-                <div>Poner aqui descripcion y rating y que se muestre solo cuando se pase por encima</div>
+            <h1>{details.title}</h1>
+            <div className="movieDetailsPpal">
+                <img src={"http://image.tmdb.org/t/p/w400" + details.poster_path} alt=""/>
+                <div className="description_and_rating">
+                    <p>{details.overview}</p>
+                    <p>{details.release_date}</p>
+                    <a href={details.homepage}>{details.homepage}</a>
+                    <h2>Rating: {details.vote_average}</h2>
+                </div>
+            </div>
+            
         </div>
     )
 }

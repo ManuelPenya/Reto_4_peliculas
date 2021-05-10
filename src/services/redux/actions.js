@@ -14,7 +14,7 @@ export const listMovies = (movieType) => async (dispatch) => {
 
 export const detailsMovie = (movieId) => async (dispatch) => {
     try{
-        const details = await axios.get(`https://api.themoviedb.org/3/movie/${movieId}?api_key=079c21f9801a3caa498a95d9d9dfe4ca&language=en-US`)
+        const details = await axios.get(`https://api.themoviedb.org/3/movie/${movieId}?api_key=079c21f9801a3caa498a95d9d9dfe4ca&language=es-ES`)
 
         dispatch({
             type: 'SHOW_MOVIE_DETAILS',
