@@ -3,6 +3,7 @@
 .movies {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	background-color: $dark;
 	padding-top: 2rem;
 }

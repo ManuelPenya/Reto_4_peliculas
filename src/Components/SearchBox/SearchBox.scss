@@ -1,0 +1,27 @@
+@import "./../../SCSS/colors.scss";
+
+.search_box {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+
+	form > input {
+		all: unset;
+		background-color: white;
+		padding: 0.25rem;
+		border-radius: 6px;
+		width: 140px;
+	}
+	@media (min-width: 420px) {
+		form > input {
+			padding: 0.7rem;
+			width: 200px;
+		}
+	}
+	@media (min-width: 840px) {
+		form > input {
+			width: 250px;
+		}
+	}
+}
